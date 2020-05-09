@@ -7,7 +7,7 @@ export const Product = () => {
   const scan = useSelector(state => state.productsReducer.product)
 
   return (
-    <section>
+    <section class="section">
       {scan.product && scan.status === 1 && (
         <div>
           <ProductImg src={scan.product.image_front_small_url} alt={scan.product.product_name} />
@@ -26,10 +26,11 @@ export const Product = () => {
 }
 
 const ProductImg = styled.img`
-  margin: 20px 0;
+  margin-top: 100px;
 `
 
 const H3 = styled.h3`
   background: #ffa6a6;
   padding: 10px;
+  margin-top: 0px;
 `

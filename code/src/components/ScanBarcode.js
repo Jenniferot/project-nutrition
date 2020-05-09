@@ -48,6 +48,7 @@ const ScanButton = styled.button`
   border: 2px solid black;
   padding: 10px 20px;
   font-size: 16px;
+  margin-bottom: 80px;
 
   &:hover{
     box-shadow: 4px 4px #FF0000;
