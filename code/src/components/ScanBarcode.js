@@ -14,7 +14,9 @@ export const ScanBarcode = () => {
       <Wrapper>
         {!showScanner && (
           <Ean src="../assets/ean.jpg" alt="ean" />
+
         )}
+        <div></div>
         {showScanner && (
           <BarcodeScanner onDetected={(code) => {
             setShowScanner(false)
@@ -30,11 +32,6 @@ export const ScanBarcode = () => {
         </ScanButton>
       )}
 
-      {/* {showScanner && (
-        <ScanButton type="button" onClick={() => setShowScanner(false)}>
-          Close camera
-        </ScanButton>
-      )} */}
     </Section>
   )
 }

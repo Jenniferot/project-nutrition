@@ -7,7 +7,7 @@ export const Product = () => {
   const scan = useSelector(state => state.productsReducer.product)
 
   return (
-    <section class="section">
+    <section class="nutritionContainer">
       {scan.product && scan.status === 1 && (
         <div>
           <ProductImg src={scan.product.image_front_small_url} alt={scan.product.product_name} />
